@@ -220,5 +220,11 @@
 
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
+    
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_needCustomFODView">true</bool>
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
 
+    <!-- Whether device has screen off FOD support -->
+    <bool name="config_supportScreenOffFod">true</bool>
 </resources>

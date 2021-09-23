@@ -7,10 +7,10 @@
 $(call inherit-product, device/xiaomi/equuleus/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_equuleus
+PRODUCT_NAME := xtended_equuleus
 PRODUCT_DEVICE := equuleus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8 Pro
@@ -23,3 +23,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="equuleus"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# FOD animations
+TARGET_WANTS_FOD_ANIMATIONS := true
+EXTRA_FOD_ANIMATIONS := true
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+XTENDED_BUILD_MAINTAINER := IanFsociety
